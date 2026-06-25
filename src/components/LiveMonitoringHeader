@@ -1,0 +1,47 @@
+import { Grid3X3, List, Maximize2 } from "lucide-react";
+
+export function LiveMonitoringHeader() {
+  return (
+    <div className="mb-3 flex items-center justify-between gap-3">
+      {/* Left title */}
+      <h2 className="text-sm font-semibold text-white">
+        Live Monitoring <span className="text-white/80">(4 Cameras)</span>
+      </h2>
+
+      {/* Right controls */}
+      <div className="flex items-center gap-2">
+        {/* Grid icon */}
+        <button
+          type="button"
+          className="flex h-8 w-8 items-center justify-center rounded-md border border-[#123250] bg-[#061b2d] text-white/80 hover:bg-[#0b2a45] hover:text-white"
+        >
+          <Grid3X3 size={16} />
+        </button>
+
+        {/* List icon */}
+        <button
+          type="button"
+          className="flex h-8 w-8 items-center justify-center rounded-md border border-[#123250] bg-[#061b2d] text-white/80 hover:bg-[#0b2a45] hover:text-white"
+        >
+          <List size={17} />
+        </button>
+
+        {/* Expand View button */}
+        <button
+          type="button"
+          className="h-8 rounded-md border border-[#123250] bg-[#061b2d] px-4 text-xs font-medium text-white hover:bg-[#0b2a45]"
+        >
+          Expand View
+        </button>
+
+        {/* Right fullscreen icon */}
+        <button
+          type="button"
+          className="flex h-8 w-8 items-center justify-center rounded-md border border-[#123250] bg-[#061b2d] text-white/80 hover:bg-[#0b2a45] hover:text-white"
+        >
+          <Maximize2 size={16} />
+        </button>
+      </div>
+    </div>
+  );
+}

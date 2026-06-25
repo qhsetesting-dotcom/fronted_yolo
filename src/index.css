@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+/* Keep the dashboard compact while still allowing mobile responsiveness. */
+html {
+  font-size: 75%;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  background: #020817;
+  color: white;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: auto;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+.glass-card {
+  background: linear-gradient(180deg, #06182b 0%, #03111f 100%);
+  border: 1px solid #123250;
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+/* Prevent tiny layout shifts/overflow at browser zoom levels. */
+.dashboard-shell {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
